@@ -1,0 +1,33 @@
+install react app from terminal
+npm install -g create-react-app
+create-react-app-version
+npx create-react-app<project name>
+
+
+
+
+
+.npm create vite@latest
+.npm install
+.npm run dev
+
+git command line
+push
+git init
+git remote add origin https...
+git add.
+git commit -m "Add initial commit"
+git push origin master
+
+Branching
+
+git bramch<BranchName>
+git checkout <BranchName>
+git add
+git commit -m"Add initial commit"
+git push -u origin<BranchName>
+
+Merging
+git checkout master
+git merge<changes branch name>
+git push-u origin master
