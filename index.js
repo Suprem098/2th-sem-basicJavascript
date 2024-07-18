@@ -570,3 +570,70 @@
 // myFunc();
 
 
+// DOM Manipulation
+
+console.log(document.body);
+console.log(document.head);
+
+let result = document.getElementById("hello");
+result.innerText = "hello world";
+result.style.backgroundColor = "red";
+result.style.color = "white";
+result.style.textAlign = "center";
+
+result.setAttribute("class", "NewClass");
+console.log(result.getAttribute("class"));
+
+console.log(result);
+
+// let ans = document.getElementsByClassName("myDiv")[0];
+// console.log(ans);
+
+let ans = document.getElementsByClassName("myDiv")[0];
+ans.innerHTML = "shareholders";
+ans.style.backgroundColor = "red";
+ ans.style.color = "white";
+ ans.style.textAlign = "center";
+ ans.style.padding = "10px";
+
+ 
+let output = document.getElementsByClassName("myDiv");
+output[1].innerHTML = "stakeholders";
+output[1].style.backgroundColor = "yellow";
+ output[1].style.color = "white";
+ output[1].style.textAlign = "center";
+ output[1].style.padding = "10px";
+
+ let display = document.getElementsByTagName("span")[0]
+ display.innerText = "nepal lo chor oli ko bhauiju arju rana ho ho ";
+ display.style.backgroundColor = "purple";
+ display.style.color = "black";
+
+ let show = document.getElementsByTagName("span")[1]
+ show.innerText = "nepal lo chor oli ko bhauiju arju rana ho ho ";
+ show.style.backgroundColor = "yellowgreen";
+ show.style.color = "blue";
+
+
+//  direct print elements without html
+//  let h2 = document.createElement("h2");
+//  h2.innerHTML = "task1";
+//  document.body.append(h2);
+
+ let h2 = document.createElement("h2");
+ h2.innerHTML = "task1";
+ document.body.prepend(h2);
+
+ let btn = document.querySelector("#btn");
+ btnAdd.style.backgroundColor = "blue";
+ btnAdd.style.color = "white";
+ btnAdd.style.padding = "10px";
+ btnAdd.style.border = "none";
+ btnAdd.style.cursor = "pointer";
+
+ let btnRemove = document.querySelectorAll("button")[1];
+ btnRemove.style.backgroundColor = "green";
+ btnRemove.style.color = "white";
+ btnRemove.style.padding = "10px";
+ btnRemove.style.border = "none";
+ btnRemove.style.cursor = "pointer";
