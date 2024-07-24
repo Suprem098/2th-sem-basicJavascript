@@ -572,68 +572,166 @@
 
 // DOM Manipulation
 
-console.log(document.body);
-console.log(document.head);
+// console.log(document.body);
+// console.log(document.head);
 
-let result = document.getElementById("hello");
-result.innerText = "hello world";
-result.style.backgroundColor = "red";
-result.style.color = "white";
-result.style.textAlign = "center";
+// let result = document.getElementById("hello");
+// result.innerText = "hello world";
+// result.style.backgroundColor = "red";
+// result.style.color = "white";
+// result.style.textAlign = "center";
 
-result.setAttribute("class", "NewClass");
-console.log(result.getAttribute("class"));
+// result.setAttribute("class", "NewClass");
+// console.log(result.getAttribute("class"));
 
-console.log(result);
+// console.log(result);
+
+// // let ans = document.getElementsByClassName("myDiv")[0];
+// // console.log(ans);
 
 // let ans = document.getElementsByClassName("myDiv")[0];
-// console.log(ans);
-
-let ans = document.getElementsByClassName("myDiv")[0];
-ans.innerHTML = "shareholders";
-ans.style.backgroundColor = "red";
- ans.style.color = "white";
- ans.style.textAlign = "center";
- ans.style.padding = "10px";
+// ans.innerHTML = "shareholders";
+// ans.style.backgroundColor = "red";
+//  ans.style.color = "white";
+//  ans.style.textAlign = "center";
+//  ans.style.padding = "10px";
 
  
-let output = document.getElementsByClassName("myDiv");
-output[1].innerHTML = "stakeholders";
-output[1].style.backgroundColor = "yellow";
- output[1].style.color = "white";
- output[1].style.textAlign = "center";
- output[1].style.padding = "10px";
+// let output = document.getElementsByClassName("myDiv");
+// output[1].innerHTML = "stakeholders";
+// output[1].style.backgroundColor = "yellow";
+//  output[1].style.color = "white";
+//  output[1].style.textAlign = "center";
+//  output[1].style.padding = "10px";
 
- let display = document.getElementsByTagName("span")[0]
- display.innerText = "nepal lo chor oli ko bhauiju arju rana ho ho ";
- display.style.backgroundColor = "purple";
- display.style.color = "black";
+//  let display = document.getElementsByTagName("span")[0]
+//  display.innerText = "nepal lo chor oli ko bhauiju arju rana ho ho ";
+//  display.style.backgroundColor = "purple";
+//  display.style.color = "black";
 
- let show = document.getElementsByTagName("span")[1]
- show.innerText = "nepal lo chor oli ko bhauiju arju rana ho ho ";
- show.style.backgroundColor = "yellowgreen";
- show.style.color = "blue";
+//  let show = document.getElementsByTagName("span")[1]
+//  show.innerText = "nepal lo chor oli ko bhauiju arju rana ho ho ";
+//  show.style.backgroundColor = "yellowgreen";
+//  show.style.color = "blue";
 
 
-//  direct print elements without html
+// //  direct print elements without html
+// //  let h2 = document.createElement("h2");
+// //  h2.innerHTML = "task1";
+// //  document.body.append(h2);
+// function AddTask(){
 //  let h2 = document.createElement("h2");
 //  h2.innerHTML = "task1";
-//  document.body.append(h2);
+//  document.body.prepend(h2);
+// }
+// function RemoveTask(){
+//     let div =document.querySelector("h2")
+//         div.remove();
+    
+// }
 
- let h2 = document.createElement("h2");
- h2.innerHTML = "task1";
- document.body.prepend(h2);
+//  let btn = document.querySelector("#btn");
+//  btnAdd.style.backgroundColor = "blue";
+//  btnAdd.style.color = "white";
+//  btnAdd.style.padding = "10px";
+//  btnAdd.style.border = "none";
+//  btnAdd.style.cursor = "pointer";
+//  btnAdd.onclick =AddTask;
 
- let btn = document.querySelector("#btn");
- btnAdd.style.backgroundColor = "blue";
- btnAdd.style.color = "white";
- btnAdd.style.padding = "10px";
- btnAdd.style.border = "none";
- btnAdd.style.cursor = "pointer";
+//  let btnRemove = document.querySelectorAll("button")[1];
+//  btnRemove.style.backgroundColor = "green";
+//  btnRemove.style.color = "white";
+//  btnRemove.style.padding = "10px";
+//  btnRemove.style.border = "none";
+//  btnRemove.style.cursor = "pointer";
+//  btnRemove.onclick =RemoveTask;
+// AdvanceArray Method
 
- let btnRemove = document.querySelectorAll("button")[1];
- btnRemove.style.backgroundColor = "green";
- btnRemove.style.color = "white";
- btnRemove.style.padding = "10px";
- btnRemove.style.border = "none";
- btnRemove.style.cursor = "pointer";
+//  const Add=(a,b)=>{
+//     let result =a+b;
+//     return result;
+// }
+// let output =Add(4,5);
+// console.log(output);
+// let arr=[4,5,6,7,8,9]
+// // find
+// let ans=arr.find((value) => value >7);
+// console.log(ans);
+// const products =[{id:1,name:"AirForce",price:4000,instock:true},
+//     {id:2,name:"Jordan",price:5000,instock:false},
+//     {id:3,name:"SB Dunk",price:6000,instock:false},
+//     {id:4,name:"Goldstar",price:3000,instock:true}
+// ];
+// let output=products.find((value)=>!value.instock);
+// console.log(output);
+// let arr=[4,5,6,7,8,9]
+// // filter
+// let ans=arr.filter((value) => value >7);
+// console.log(ans);
+// const products =[{id:1,name:"AirForce",price:4000,instock:true},
+//     {id:2,name:"Jordan",price:5000,instock:false},
+//     {id:3,name:"SB Dunk",price:6000,instock:false},
+//     {id:4,name:"Goldstar",price:3000,instock:true}
+// ];
+// let output=products.filter((value)=>!value.instock);
+// console.log(output);
+// some
+// let arr=[4,5,6,7,8,9]
+// // filter
+// let ans=arr.some((value) => value >7);
+// console.log(ans);
+// const products =[{id:1,name:"AirForce",price:4000,instock:true},
+//                {id:2,name:"Jordan",price:5000,instock:false},
+//                {id:3,name:"SB Dunk",price:6000,instock:false},
+//                {id:4,name:"Goldstar",price:3000,instock:true}
+// ];
+// let output=products.some((value)=>!value.instock);
+// console.log(output);
+// every
+// let arr=[4,5,6,7,8,9]
+// // filter
+// let ans=arr.every((value) => value >7);
+// console.log(ans);
+// const products =[{id:1,name:"AirForce",price:4000,instock:true},
+//                {id:2,name:"Jordan",price:5000,instock:false},
+//                {id:3,name:"SB Dunk",price:6000,instock:false},
+//                {id:4,name:"Goldstar",price:3000,instock:true}
+// ];
+// let output=products.every((value)=>!value.instock);
+// console.log(output);
+// foreach
+// let arr=[4,5,6,7,8,9]
+// let ans=arr.forEach((value) => value >7);
+// console.log(ans);
+// const products =[{id:1,name:"AirForce",price:4000,instock:true},
+//                {id:2,name:"Jordan",price:5000,instock:false},
+//                {id:3,name:"SB Dunk",price:6000,instock:false},
+//                {id:4,name:"Goldstar",price:3000,instock:true}
+// ];
+// let output=products.forEach((value)=>value.instock);
+// console.log(output);
+// map
+// let arr=[4,5,6,7,8,9]
+// let ans=arr.map((value) => value >7);
+// console.log(ans);
+// const products =[{id:1,name:"AirForce",price:4000,instock:true},
+//                {id:2,name:"Jordan",price:5000,instock:false},
+//                {id:3,name:"SB Dunk",price:6000,instock:false},
+//                {id:4,name:"Goldstar",price:3000,instock:true}
+// ];
+// let output=products.map((value)=>value.name);
+// console.log(output);
+// let h1=document.createElement("h1");
+// h1.innerText=output;
+// document.body.append(h1);
+// reduce
+let arr=[4,5,6,7,8,9]
+let ans=arr.reduce((accum,curValue) => accum+ curValue);
+console.log(ans);
+const products =[{id:1,name:"AirForce",price:4000,instock:true},
+               {id:2,name:"Jordan",price:5000,instock:false},
+               {id:3,name:"SB Dunk",price:6000,instock:false},
+               {id:4,name:"Goldstar",price:3000,instock:true}
+];
+let output=products.reduce((total,curValue)=>total +curValue.price,0);
+console.log(output);
