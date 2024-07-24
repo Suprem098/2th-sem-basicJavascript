@@ -725,13 +725,37 @@
 // h1.innerText=output;
 // document.body.append(h1);
 // reduce
-let arr=[4,5,6,7,8,9]
-let ans=arr.reduce((accum,curValue) => accum+ curValue);
-console.log(ans);
-const products =[{id:1,name:"AirForce",price:4000,instock:true},
-               {id:2,name:"Jordan",price:5000,instock:false},
-               {id:3,name:"SB Dunk",price:6000,instock:false},
-               {id:4,name:"Goldstar",price:3000,instock:true}
-];
-let output=products.reduce((total,curValue)=>total +curValue.price,0);
-console.log(output);
+// let arr=[4,5,6,7,8,9]
+// let ans=arr.reduce((accum,curValue) => accum+ curValue);
+// console.log(ans);
+// const products =[{id:1,name:"AirForce",price:4000,instock:true},
+//                {id:2,name:"Jordan",price:5000,instock:false},
+//                {id:3,name:"SB Dunk",price:6000,instock:false},
+//                {id:4,name:"Goldstar",price:3000,instock:true}
+// ];
+// let output=products.reduce((total,curValue)=>total +curValue.price,0);
+// console.log(output);
+const heading  = document.getElementById("heading");
+const box1  = document.getElementById("box1");
+const addBTn  = document.getElementById("addBTn");
+ let input = document.getElementById("newInput");
+
+
+addBTn.addEventListener("click", () => {
+    console.log("clicked");
+    heading.innerText = "who are you";
+    heading.style.backgroundColor = "red";
+    heading.style.color = "white";
+    heading.style.padding = "20px";
+});
+
+addBTn.addEventListener ("dblclick", () => {
+    addBTn.style.backgroundColor = "purple";
+    addBTn.style.color = "white";
+    addBTn.style.padding = "20px";
+    addBTn.style.border =  "none";
+});
+
+input.addEventListener("change",(e) => {
+    console.log(e.target.value);
+});
