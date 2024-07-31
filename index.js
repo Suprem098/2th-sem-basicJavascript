@@ -759,19 +759,114 @@
 // input.addEventListener("change",(e) => {
 //     console.log(e.target.value);
 // });
-const input =document.getElementById("myInput");
-const addBtn=document.getElementById("addBtn");
-const removeBtn=document.getElementById("removeBtn");
+// const input =document.getElementById("myInput");
+// const addBtn=document.getElementById("addBtn");
+// const removeBtn=document.getElementById("removeBtn");
 
-const myFunc =()=>{
-    localStorage.setItem("key1",JSON.stringify({name: "Ram Thapa",Age:23,isMArried:true}));
+// const myFunc =()=>{
+//     localStorage.setItem("key1",JSON.stringify({name: "Ram Thapa",Age:23,isMArried:true}));
+
+// }
+// addBtn.addEventListener("click",myFunc);
+// removeBtn.addEventListener("click",()=>{
+//     localStorage.clear();
+// });
+// if(localStorage.getItem("key1")){
+//    console.log(JSON.parse(localStorage.getItem("key1")));
+// };
+// console.log(input,addBtn,removeBtn);
+// console.log(Math.random());
+// // pow
+// console.log(Math.pow(2,6));
+// // square
+// console.log(Math.sqrt(9));
+// random
+// let num =4.7;
+// let result = Math.random(num);
+// console.log(result);
+// trunc
+// let num =4.7;
+// let result = Math.trunc(num);
+// console.log(result);
+// // floor
+// let num =4.7;
+// let result = Math.floor(num);
+// console.log(result);
+// coil
+// let num =4.7;
+// let result = Math.coil(num);
+// console.log(result);
+// abs
+// function AbsValue(a,b){
+//     return a-b;
+// }
+
+// let result =AbsValue (3,7);
+// console.log(result);
+// Area of circle
+
+// CLOCK
+// function updateClock(){
+//     let clock =document.querySelector(".clock")
+//     let now =new Date();
+//     let hours =now.getHours().toString().padStart(2,"0");
+//     let Minutes =now.getMinutes().toString().padStart(2,"0");
+//     let seconds=now.getSeconds().toString().padStart(2,"0");
+//     clock.innerHTML=`${hours}:${Minutes}:${seconds}`;
+    
+// }
+// setInterval(updateClock,1000);
+// function BankAccount(customerName,balance){
+//     this.customerName = customerName;
+//     this.balance=balance;
+//     this.accountNumber=Date.now()
+
+// }
+// const supremAccount=new BankAccount("Suprem Giri",3000000);
+
+// const ritaAccount=new BankAccount("rita",3000000);
+// console.log(supremAccount);
+// console.log(ritaAccount);
+
+// class(OOP)
+class BankAccount{
+    constructor(customerName,balance)
+    {
+        this.customerName = customerName;
+        this.balance=balance;
+        this.accountNumber=Date.now()
+}
+deposit(amount){
+    this.balance += amount;
+}
+withdraw(amount){
+    this.balance -= amount;
+}
+}
+//  const balenAccount=new BankAccount("Balendra Shah ",5000000);
+//  const ramAccount=new BankAccount("Ram Karki ",5000000);
+//  console.log(balenAccount.balance);
+//  balenAccount.deposit(7000);
+//  ramAccount.deposit(3000);
+//  ramAccount.withdraw(4000);
+//  console.log(balenAccount,ramAccount);
+
+ class SavingAccount extends BankAccount{
+    constructor(customerName,balance)
+    {
+        super(customerName,balance);
+        this.transactionlimit=50000;
+       
+}                                                                                                                                             
+takePersonaalLoan(amount,taxRate){
+    let ans = amt+(amount*taxRate )/100;
+    console.log(`your personal loan is :${ans}`);
+}
 
 }
-addBtn.addEventListener("click",myFunc);
-removeBtn.addEventListener("click",()=>{
-    localStorage.clear();
-});
-if(localStorage.getItem("key1")){
-   console.log(JSON.parse(localStorage.getItem("key1")));
-};
-console.log(input,addBtn,removeBtn);
+
+const balenAccount=new SavingAccount("Balendra Shah ",5000000);
+const ramAccount=new SavingAccountAccount("Ram Karki ",5000000);
+ramAccount.takePersonaalLoan(90000,12);
+
+console.log(ramAccount);
