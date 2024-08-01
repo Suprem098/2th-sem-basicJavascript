@@ -851,22 +851,22 @@ withdraw(amount){
 //  ramAccount.withdraw(4000);
 //  console.log(balenAccount,ramAccount);
 
- class SavingAccount extends BankAccount{
-    constructor(customerName,balance)
-    {
-        super(customerName,balance);
-        this.transactionlimit=50000;
+//  class SavingAccount extends BankAccount{
+//     constructor(customerName,balance)
+//     {
+//         super(customerName,balance);
+//         this.transactionlimit=50000;
        
-}                                                                                                                                             
-takePersonaalLoan(amount,taxRate){
-    let ans = amt+(amount*taxRate )/100;
-    console.log(`your personal loan is :${ans}`);
-}
+// }                                                                                                                                             
+// takePersonaalLoan(amount,taxRate){
+//     let ans = amount+(amount*taxRate )/100;
+//     console.log(`your personal loan is :${ans}`);
+// }
 
-}
+// }
 
-const balenAccount=new SavingAccount("Balendra Shah ",5000000);
-const ramAccount=new SavingAccountAccount("Ram Karki ",5000000);
-ramAccount.takePersonaalLoan(90000,12);
+// const balenAccount=new SavingAccount("Balendra Shah ",5000000);
+// const ramAccount=new SavingAccount("Ram Karki ",5000000);
+// ramAccount.takePersonaalLoan(90000,12);
 
-console.log(ramAccount);
+// console.log(ramAccount);
