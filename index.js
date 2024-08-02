@@ -829,20 +829,20 @@
 // console.log(ritaAccount);
 
 // class(OOP)
-class BankAccount{
-    constructor(customerName,balance)
-    {
-        this.customerName = customerName;
-        this.balance=balance;
-        this.accountNumber=Date.now()
-}
-deposit(amount){
-    this.balance += amount;
-}
-withdraw(amount){
-    this.balance -= amount;
-}
-}
+// class BankAccount{
+//     constructor(customerName,balance)
+//     {
+//         this.customerName = customerName;
+//         this.balance=balance;
+//         this.accountNumber=Date.now()
+// }
+// deposit(amount){
+//     this.balance += amount;
+// }
+// withdraw(amount){
+//     this.balance -= amount;
+// }
+// }
 //  const balenAccount=new BankAccount("Balendra Shah ",5000000);
 //  const ramAccount=new BankAccount("Ram Karki ",5000000);
 //  console.log(balenAccount.balance);
@@ -870,3 +870,34 @@ withdraw(amount){
 // ramAccount.takePersonaalLoan(90000,12);
 
 // console.log(ramAccount);
+
+class BankAccount{
+    customerName;
+    #balance;
+    accountNumber;
+constructor(customerName,balance){
+    this.customerName=customerName;
+    this.#balance=balance;
+    this.accountNumber=Date.now();
+}
+
+setBalance(amount){
+    this.#balance=amount
+}
+getBalance(amount){
+    return this.#balance
+}
+deposit(amount){
+    this.#balance +=amount;
+
+}
+withdraw (amount){
+    this.#balance -=amount;
+}
+
+}
+const ramAccount= new BankAccount("RamThapa",7000);
+const laxmanAccount=new BankAccount("Laxman Singh",10000);
+ramAccount.setBalance(9000);
+console.log(ramAccount.getBalance());
+console.log(ramAccount,laxmanAccount); 
