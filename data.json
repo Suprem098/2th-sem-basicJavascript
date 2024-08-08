@@ -1,0 +1,15 @@
+{
+    "person":{
+        "name":"John Doe",
+        "age":30,
+        "isMarried":true
+    
+    },
+    "products":[{
+        "name":"Product 1",
+        "price":10.99,
+        "description":"this is product1",
+        "inStock":true
+    }]
+
+}

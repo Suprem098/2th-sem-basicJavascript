@@ -871,33 +871,63 @@
 
 // console.log(ramAccount);
 
-class BankAccount{
-    customerName;
-    #balance;
-    accountNumber;
-constructor(customerName,balance){
-    this.customerName=customerName;
-    this.#balance=balance;
-    this.accountNumber=Date.now();
-}
+// class BankAccount{
+//     customerName;
+//     #balance;
+//     accountNumber;
+// constructor(customerName,balance){
+//     this.customerName=customerName;
+//     this.#balance=balance;
+//     this.accountNumber=Date.now();
+// }
 
-setBalance(amount){
-    this.#balance=amount
-}
-getBalance(amount){
-    return this.#balance
-}
-deposit(amount){
-    this.#balance +=amount;
+// setBalance(amount){
+//     this.#balance+=amount;
+// }
+// getBalance(amount){
+//     return this.#balance;
+// }
+// deposit(amount){
+//     this.#balance +=amount;
+//     this.#logTransactions("deposit",amount);
 
-}
-withdraw (amount){
-    this.#balance -=amount;
-}
+// }
+// withdraw (amount){
+//     this.#balance -=amount;
+//     this.#logTransactions("withdraw",amount);
+// }
+// #logTransactions(type,amount){
+//     console.log(`Transaction type: ${type}, Amount: ${amount}`);
+// }
 
+// }
+// const ramAccount= new BankAccount("RamThapa",7000);
+// const laxmanAccount=new BankAccount("Laxman Singh",10000);
+// ramAccount.deposit(9000);
+// // ramAccount.setBalance(9000);
+// console.log(ramAccount.getBalance());
+// console.log(ramAccount,laxmanAccount); 
+// Static Property and Method
+
+class User{
+    static studentUsers=0;
+    constructor(name,age,isMarried){
+        this.name=name;
+        this.age=age;
+        this.isMarried=isMarried;
+        User.studentUsers +=1;
+    }
+    static sortByAge(a,b){
+        return a.age-b.age;
+    }
 }
-const ramAccount= new BankAccount("RamThapa",7000);
-const laxmanAccount=new BankAccount("Laxman Singh",10000);
-ramAccount.setBalance(9000);
-console.log(ramAccount.getBalance());
-console.log(ramAccount,laxmanAccount); 
+let user1= new User("Hari Sapkota",34,"Married");
+let user2=new User("Ram Thapa",24,"Married");
+let user3=new  User("Amrit Tamang",32,"unMarried");
+let user4=new User("Shyam Gurung",44,"Married");
+console.log(user1,user2,user3,user4);
+
+let users=[user1,user2,user3,user4];
+let output=users.sort(User.sortByAge);
+console.log(output);
+console.log(User.studentUsers);
