@@ -909,25 +909,73 @@
 // console.log(ramAccount,laxmanAccount); 
 // Static Property and Method
 
-class User{
-    static studentUsers=0;
-    constructor(name,age,isMarried){
-        this.name=name;
-        this.age=age;
-        this.isMarried=isMarried;
-        User.studentUsers +=1;
-    }
-    static sortByAge(a,b){
-        return a.age-b.age;
-    }
-}
-let user1= new User("Hari Sapkota",34,"Married");
-let user2=new User("Ram Thapa",24,"Married");
-let user3=new  User("Amrit Tamang",32,"unMarried");
-let user4=new User("Shyam Gurung",44,"Married");
-console.log(user1,user2,user3,user4);
+// class User{
+//     static studentUsers=0;
+//     constructor(name,age,isMarried){
+//         this.name=name;
+//         this.age=age;
+//         this.isMarried=isMarried;
+//         User.studentUsers +=1;
+//     }
+//     static sortByAge(a,b){
+//         return a.age-b.age;
+//     }
+// }
+// let user1= new User("Hari Sapkota",34,"Married");
+// let user2=new User("Ram Thapa",24,"Married");
+// let user3=new  User("Amrit Tamang",32,"unMarried");
+// let user4=new User("Shyam Gurung",44,"Married");
+// console.log(user1,user2,user3,user4);
 
-let users=[user1,user2,user3,user4];
-let output=users.sort(User.sortByAge);
-console.log(output);
-console.log(User.studentUsers);
+// let users=[user1,user2,user3,user4];
+// let output=users.sort(User.sortByAge);
+// console.log(output);
+// console.log(User.studentUsers);
+
+
+// function MyFunc(name,age){
+//     this.name=name;
+//     this.age=age;
+// }
+// const user1 =new MyFunc("Harka Rai",45);
+// console.log(user1);
+
+// const MyFunc=(name,age) =>{
+//     this.name=name;
+//     this.age=age;
+// };
+// const user1 =new MyFunc("Harka Rai",45);
+// console.log(user1);
+// function  MyFunc(){
+//     console.log(arguments);
+
+// }
+// MyFunc(1,2,3,4);
+// const MyFunc=()=>{
+//     console.log(arguments);
+
+// };
+// MyFunc(1,2,3,4);
+
+// Hoisting In JavaScript
+
+// console.log(x);
+// const x=90;
+
+// hoisting in function
+
+// let result =Sum(5,7);
+// console.log(result);
+// function Sum(a,b){
+//     return a+b;
+// };
+
+// Arrow Function
+
+const Sum=(a,b)=>{
+    return a+b;
+};
+let result =Sum(5,7);
+console.log(result);
+
+
